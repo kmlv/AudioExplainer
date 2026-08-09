@@ -1,0 +1,16 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+dist/
+build/
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+
+# audio scratch (output is /tmp by default, but ignore any local stray)
+*.mp3
+*.aiff
+
+# personal generated deliverables (audio + transcripts) — regenerable, not source
+deliverables/
