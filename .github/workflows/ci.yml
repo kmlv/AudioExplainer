@@ -39,7 +39,6 @@ jobs:
         run: uv run pytest -q
 
       - name: Audit installed dependencies
-        if: matrix.python-version == '3.12'
         run: uv run --with pip-audit pip-audit
 
       - name: Audit the public source set

@@ -33,6 +33,7 @@ Issues = "https://github.com/kmlv/AudioExplainer/issues"
 dev = ["pytest>=7.0"]
 piper = [
   "piper-tts>=1.6.0,<2",
+  # onnxruntime 1.23.x is the last line that publishes CPython 3.10 wheels.
   "onnxruntime<1.24; python_version < '3.11'",
 ]
 
